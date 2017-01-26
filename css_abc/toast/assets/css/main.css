@@ -1,0 +1,105 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 1. Main Layout ================================= */
+* {
+  box-sizing: border-box; }
+
+.toast {
+  width: 200px;
+  height: 220px;
+  background-image: url("http://cs.brown.edu/courses/cs129/results/proj4/marroz/images/randomtoast.png");
+  position: absolute;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 20px; 
+  border-bottom-right-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.jam {
+  width: 170px;
+  height: 190px;
+  background: purple;
+  position: absolute;
+  border-top-left-radius: 40px;
+  border-top-right-radius:50px;
+  border-bottom-left-radius: 20px; 
+  border-bottom-right-radius: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 2.2s;
+  transition-timing-function: ease-in;
+}
+
+.knife-upper {
+  width: 30px;
+  height: 100px;
+  background: grey;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  transition: 1.5s;
+  
+}
+
+.knife-lower {
+  width: 35px;
+  height: 100px;
+  background: skyblue;
+  position: absolute;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px;
+  top: 65%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  transition: 1.5s;
+}
+
+.animate .knife-upper,
+.animate .knife-lower {
+  left: 30%;
+  transition-timing-function: ease-in-out;
+}
+
+.animate .jam {
+  opacity: .9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
